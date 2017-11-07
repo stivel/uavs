@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>面包云--中国领先的数字整合营销服务平台</title>
+	<#include "/common/base.htm">
+	<meta name="keywords" content="面包云、面包客、mianbaoyun、信息服务、信息咨询、咨询服务、整合营销、数字营销、互联网科技、理财、互联网理财、互联网金融、财富管理、海外教育、国际留学、在线教育、留学、大健康、医疗、医疗健康、世泽产品、p2p、汇中、汇中网、汇中大金融、数字整合营销服务平台、信息咨询服务平台、资深理财、理财助手、健康顾问、教育咨询、国际教育、留学、广告营销、数字营销、整合营销、营销服务、互联网营销、数字整合营销。">
+	<meta name="description" content="面包云是国内领先的数字整合营销服务平台，将互联网技术应用于信息分享与创新，致力于为高净值用户提供一站式信息咨询服务。平台聚集了海外教育、大健康、财富管理等领域的资深顾问，为客户提供高品质、高质量的专业性信息咨询服务。">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="window-target" content="_top">
+	<meta name="format-detection" content="telephone=no">
+    <meta name="baidu-site-verification" content="11tAwIcXB2" />
+    <link rel="stylesheet" type="text/css" href="${basePath}/resources/project/css/index.css?${version}">
+	<link rel="stylesheet" type="text/css" href="${basePath}/resources/project/css/index.css">
+</head>
+<body>
+	<!--<div class='dial-banner'>
+	    <a href="${basePath}/activity/star/index.htm" target="_blank"><span>活动时间：2017年5月19日-2017年5月22日</span></a>
+	    <p class="dial-count">05</p>
+	    <p class="dial-close">关闭</p>
+	</div>
+	<div class="dial-floater">
+	    <img src="${basePath}/resources/project/images/landing/dial-float.png" class="dial-ball" alt="">
+	    <p class="dial-chassis"><span class="dial-shadow"></span></p>
+	</div>-->
+
+    <#include "common/header.ftl">
+
+    <!--index-->
+    <div class="index">
+    	<#if isAttenShop =='0' | isAttenShop =='1'>
+    	<#include "common/searchbar.ftl">
+    	</#if>
+        <!--trends-->
+        <div class="trends">
+            <h2>互联改变生活   分享成就梦想</h2>
+            <h4>领先的数字整合营销服务平台</h4>
+            <div class="trends-dot">
+                <div class="trends-line"></div>
+                <div class="dot01"></div>
+                <div class="dot02"></div>
+                <div class="dot03"></div>
+                <div class="dot04"></div>
+                <div class="dot05 ball">
+                    <div class="language">
+                        <p>安全可靠</p>
+                        <span>专业加密技术，保障信息安全</span>
+                    </div>
+
+                </div>
+                <div class="dot06"></div>
+                <div class="dot07"></div>
+                <div class="dot08 ball">
+                    <div class="language">
+                        <p>服务多元</p>
+                        <span>海量服务分类，灵活多样选择</span>
+                    </div>
+                </div>
+                <div class="dot09"></div>
+                <div class="dot10"></div>
+                <div class="dot11 ball">
+                    <div class="language">
+                        <p>极速分享</p>
+                        <span>信息分享模式，助力财富自由</span>
+                    </div>
+                </div>
+                <div class="dot12"></div>
+                <div class="dot13"></div>
+                <div class="dot14 ball">
+                    <div class="language">
+                        <p>专业服务</p>
+                        <span>线上专属展示，线下专业培训</span>
+                    </div>
+                </div>
+                <div class="dot15"></div>
+                <div class="dot16"></div>
+                <div class="dot17 ball">
+                    <div class="language">
+                        <p>强大团队</p>
+                        <span class="l-span06">
+							国际专业人员，提供权威服务
+						</span>
+                    </div>
+                </div>
+                <div class="dot18"></div>
+                <div class="dot19"></div>
+                <div class="dot20"></div>
+            </div>
+        </div>
+        <!--End trends-->
+
+        <!--application-->
+        <section class="application">
+            <div class="mouse">
+                <div class="mouse01"><img src="${basePath}/resources/project/images/index/mouse01.png"/></div>
+            </div>
+            <div class="container">
+                <h2>什么是<span>面包客</span></h2>
+                <p>面包客是帮助平台合作企业推广产品或服务的传播者（个人或企业），并为用户提供专业的信息咨询服务</p>
+                <a class="apply" href="${basePath}/user/agent/applyInfo.htm">立即申请面包客</a>
+            </div>
+        </section>
+        <!--End application-->
+
+        <!--quality-->
+        <section class="quality">
+            <div class="container clearfix">
+                <h2><span>优质</span>面包客</h2>
+                <div class="container see-more"><a href="${basePath}/search/platform/index.htm">查看更多</a></div>
+                <ul class="message fl">
+                	<#list listAgentUser as agentShop>
+	                	<li>
+		                    <h3>${agentShop.deputyUserName}</h3>
+		                    <p class="des">${agentShop.des}</p>
+	                	</li>
+	                </#list>
+                </ul>
+                <div class="rotate agent fnt-radius fnt-shadow fnt-easing fr" id="rotate">
+                    <ul>
+                    	<#list listAgentUser as anentUser>
+                    		<li>
+                    			<div class="head">
+                                	<img src="${readPath}${anentUser.shopHead}"/>
+                                </div>
+								<h3>${anentUser.deputyUserName}</h3>
+								<p>店铺名称：${anentUser.shopName}</p>
+								<p class="tag">可咨询：
+                                    <#list  anentUser.siteId?split(",") as s>
+                                        <#if s == '1'>
+                                            <span class="tag-blue">财富产品</span>
+                                        </#if>
+                                        <#if s == '2'>
+                                            <span class="tag-orange">世泽产品</span>
+                                        </#if>
+                                    </#list>
+                                </p>
+                                <a class="follow" href="javascript:attenAgentUser(${anentUser.id});">关注</a>
+                            </li>
+                    	</#list>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--End quality-->
+        <!-- Shop -->
+        <section class="shop">
+            <h2>店铺推荐</h2>
+            <#list proShop as f>
+            		<#if f_index == 0>
+            			<a class="btn button-02" href="javascript:openShop(${f.shopPo.id});">进入店铺</a>
+            		</#if>
+           	</#list>
+            <#list proShop as f>
+            		<#if f_index == 2>
+            			<a class="btn button-01" href="javascript:attenAgentUser(${f.shopPo.shopDeputyId});">关注面包客</a>
+            		</#if>
+           	</#list>
+            
+            <ul class="clearfix">
+            
+            	<#list proShop as f>
+            		<#if f_index == 0>
+            			<li class="item1">
+		                    <div class="item-s">
+		                        <div class="top-layer01"><img src="${basePath}/resources/project/images/index/shop-head01.png"/></div>
+		                        <div class="top-layer">
+		                            <div class="state"></div>
+		                            <div class="title clearfix">
+		                                <span class="fl">咨询了${f.paymentsNumber}<br/>款产品</span>
+		                                <div class="shop-head">
+		                                    <img src="${readPath}${f.shopPo.shopHead}"/>
+		                                </div>
+		                                <span class="fr">${f.concernCount}人<br>已关注</span>
+		                            </div>
+		                            <#if f.p2pRelation && f.fundRelation>
+			                            <div class="p2p-layer">
+			                                <div class="p2p fl">财富产品</div><div class="p2p genre fr">世泽产品</div>
+			                            </div>
+			                        <#elseif f.p2pRelation && !f.fundRelation>
+										<div class="p2p">财富产品</div>
+			                        <#else>
+			                        	<div class="p2p genre">世泽产品</div>   
+		                            </#if>
+		                            <div class="name">
+		                                <h4>${f.shopPo.shopName}</h4>
+		                                <p>${f.userDes}</p>
+		                            </div>
+		                            <a class="btn button01" href="javascript:attenAgentUser(${f.shopPo.shopDeputyId});">关注面包客</a>
+		
+		                        </div>
+		                        <div class="content-layer">
+									<!--如果两种产品都存在 -->
+		                            <#if (f.p2pProduct?size >0) && (f.fundProduct?size>0)>
+		                            	<#list f.p2pProduct as p2p>
+		                            		<#if p2p_index == 0>
+			                            		<div class="item-t01">
+					                                <div class="t1">
+					                                    <p><a href="${basePath}/product/p2p/detail?productId=${p2p.id}">${p2p.aliasName}</a></p>
+					                                    <#if p2p.remaindAmount!=0>
+					                                    	<span class="fr">预约中</span>
+					                                    <#else>
+					                                    	<span class="fr">已满标</span>
+					                                    </#if>
+					                                    
+					                                </div>
+					                                <p class="t3 t5">年均出借回报率约</p>
+					                                <div class="t4">
+					                                    <p>
+					                                    	<span class="span01">${p2p.interestRate}%</span>
+					                                        <#if p2p.interestRate2 != ''>
+					                                        	<span class="span02">${p2p.interestRate2}%</span>
+					                                        </#if>
+						                                	<span class="span03">${p2p.commonMaxInvestScope}</span><span class="span04">${p2p.individualMaxInvest}</span>
+					                                    </p>
+					                                </div>
+					                                <div class="t3 t5"><span class="span01">有效期限：${p2p.duration}个月 </span><span class="span02">咨询进度：${p2p.progress}%</span></div>
+					                                <div class="t3">回收方式（汇中网）：${p2p.description}</div>
+					                            </div>
+		                            		</#if>
+				                    	</#list>
+				                    	<#if isCon=='N'>
+				                    		<p class="i-agreement-p">此产品需签署<a href="javascript:openConfirmation('s-affirm');">世泽资本－合格投资者确认函</a>后查看</p>
+				                    	<#else>
+				                    		<#list f.fundProduct as pro>
+			                            		<#if pro_index == 0>
+				                            		<div class="item-t01 item-t02">
+						                                <div class="t1">
+						                                    <a class="a-genre" href="${basePath}/product/detailProduct?productId=${pro.id}"><p>${pro.productName}</p></a>
+						                                    <#if pro.viewState==1>
+									                        	<span class="fr">预热中</span>
+									                        <#elseif pro.viewState==2>
+									                        	<span class="fr">募集中</span>
+									                        <#elseif pro.viewState==3>
+									                        	<span class="fr">募集结束</span>
+									                        <#elseif pro.viewState==4>
+									                        	<span class="fr">投资期</span>
+									                        <#else>
+									                        	<span class="fr">募集失败</span>
+									                        </#if>
+						                                </div>
+						                                <div class="t2 t6">
+						                                    <p>
+						                                        <span class="span01">项目方向：${pro.direction}</span><span class="span02">资金规模：${pro.collectTopAmountStr}</span>
+						                                        <span class="span01">存续期：${pro.duration}</span><span class="span02">起投规模：${pro.startingLowAmountStr}</span>
+						                                    </p>
+						                                </div>
+						                                <div class="t3"><p>产品特点：${pro.details}</p></div>
+						                            </div>
+			                            		</#if>
+					                    	</#list>
+				                    	</#if>
+										<!--如果只有p2p产品 -->
+				                    	<#elseif (f.p2pProduct?size >0) && (f.fundProduct?size==0)>
+					                    	<#list f.p2pProduct as p2p>
+				                            	<div class="item-t01">
+						                               <div class="t1">
+						                                   <p><a href="${basePath}/product/p2p/detail?productId=${p2p.id}">${p2p.aliasName}</a></p>
+						                                   <#if p2p.remaindAmount!=0>
+					                                    	<span class="fr">预约中</span>
+						                                    <#else>
+						                                    	<span class="fr">已满标</span>
+						                                    </#if>
+						                               </div>
+						                               <p class="t3 t5">年均出借回报率约</p>
+						                               <div class="t4">
+						                                   <p>
+					                                   		<span class="span01">${p2p.interestRate}%</span>
+					                                        <#if p2p.interestRate2 != ''>
+					                                        	<span class="span02">${p2p.interestRate2}%</span>
+					                                        </#if>
+							                               	  <span class="span03">${p2p.commonMaxInvestScope}</span><span class="span04">${p2p.individualMaxInvest}</span>
+						                                   </p>
+						                               </div>
+						                               <div class="t3 t5"><span class="span01">有效期限：${p2p.duration}个月 </span><span class="span02">咨询进度：${p2p.progress}%</span></div>
+						                               <div class="t3">回收方式（汇中网）：${p2p.description}</div>
+						                         </div>	
+					                    	</#list>
+				                    	<#else>
+				                    		<#if isCon=='N'>
+				                    			<div class="i-agreement">
+					                                <p class="i-agreement-p i-top">此产品需签署<a href="javascript:openConfirmation('s-affirm');">世泽资本－合格投资者确认函</a>后查看</p>
+					                            </div>
+					                            <a class="btn btn-blue btn-a" href="javascript:openConfirmation('s-affirm');">签署确认函</a>
+					                        <#else>
+						                        <#list f.fundProduct as pro>
+					                            	<div class="item-t01 item-t02">
+							                              <div class="t1">
+							                                  <a class="a-genre" href="${basePath}/product/detailProduct?productId=${pro.id}"><p>${pro.productName}</p></a>
+							                                    <#if pro.viewState==1>
+									                        	<span class="fr">预热中</span>
+										                        <#elseif pro.viewState==2>
+										                        	<span class="fr">募集中</span>
+										                        <#elseif pro.viewState==3>
+										                        	<span class="fr">募集结束</span>
+										                        <#elseif pro.viewState==4>
+										                        	<span class="fr">投资期</span>
+										                        <#else>
+										                        	<span class="fr">募集失败</span>
+										                        </#if>
+							                              </div>
+							                              <div class="t2 t6">
+							                                  <p>
+							                                      <span class="span01">项目方向：${pro.direction}</span><span class="span02">资金规模：${pro.collectTopAmountStr}</span>
+							                                      <span class="span01">存续期：${pro.duration}</span><span class="span02">起投规模：${pro.startingLowAmountStr}</span>
+							                                  </p>
+							                              </div>
+							                              <div class="t3"><p>产品特点：${pro.details}</p></div>
+							                         </div>
+						                    	</#list>
+				                    		</#if>
+		                           	    </#if>
+		                        </div>
+		                    </div>
+		                </li>
+            		</#if>
+            	</#list>
+            	<#list proShop as f2>
+            		<#if f2_index == 1>
+            			<li class="item2">
+		                    <div class="item-b">
+		                        <div class="top-layer01"><img src="${basePath}/resources/project/images/index/shop-head02.jpg" alt="面包云--中国领先的数字整合营销服务平台"/></div>
+		                        <div class="top-layer">
+		                            <div class="state"></div>
+		                            <div class="title clearfix">
+		                                <span class="fl">咨询了${f2.paymentsNumber}<br/>款产品</span>
+		                                <div class="shop-head">
+		                                    <img src="${readPath}${f2.shopPo.shopHead}" alt="面包云--中国领先的数字整合营销服务平台"/>
+		                                </div>
+		                                <span class="fr t-span01">${f2.concernCount}人<br>已关注</span>
+		                            </div>
+ 		                            <!--<div class="p2p">财富产品</div> -->
+		                            
+		                            <#if f2.p2pRelation && f2.fundRelation>
+			                            <div class="p2p-layer">
+			                                <div class="p2p fl">财富产品</div><div class="p2p genre fr">世泽产品</div>
+			                            </div>
+			                        <#elseif f2.p2pRelation && !f2.fundRelation>
+										<div class="p2p">财富产品</div>
+			                        <#else>
+			                        	<div class="p2p genre">世泽产品</div>   
+		                            </#if>
+		                            
+		                            <div class="name">
+		                                <h4>${f2.shopPo.shopName}</h4>
+		                                <p>${f2.userDes}</p>
+		                            </div>
+		                            <a class="btn button01" href="javascript:attenAgentUser(${f2.shopPo.shopDeputyId});">关注面包客</a>
+		                            <a class="btn button03" href="javascript:openShop(${f2.shopPo.id});">进入店铺</a>
+		                        </div>
+		                        <div class="content-layer">
+			                    	<!--如果两种产品都存在 -->
+		                            <#if (f2.p2pProduct?size >0) && (f2.fundProduct?size>0)>
+		                            	<#list f2.p2pProduct as p2p>
+		                            		<#if p2p_index == 0>
+			                            		<div class="item-t">
+					                                <div class="t1">
+					                                    <p><a href="${basePath}/product/p2p/detail?productId=${p2p.id}">${p2p.aliasName}</a></p>
+					                                    <#if p2p.remaindAmount!=0>
+					                                    	<span class="fr">预约中</span>
+					                                    <#else>
+					                                    	<span class="fr">已满标</span>
+					                                    </#if>
+					                                </div>
+					                                <p class="t3 t5">年均出借回报率约</p>
+					                                <div class="t4">
+					                                    <p>
+					                                    	<span class="span01">${p2p.interestRate}%</span>
+					                                        <#if p2p.interestRate2 != ''>
+					                                        	<span class="span02">${p2p.interestRate2}%</span>
+					                                        </#if>
+						                                	<span class="span03">${p2p.commonMaxInvestScope}</span><span class="span04">${p2p.individualMaxInvest}</span>
+					                                    </p>
+					                                </div>
+					                                <div class="t3 t5"><span class="span01">有效期限：${p2p.duration}个月 </span><span class="span02">咨询进度：${p2p.progress}%</span></div>
+					                                <div class="t3">回收方式（汇中网）：${p2p.description}</div>
+					                            </div>
+		                            		</#if>
+				                    	</#list>
+				                    	<#if isCon=='N'>
+				                    		<p class="i-agreement-p">此产品需签署<a href="javascript:openConfirmation('s-affirm');">世泽资本－合格投资者确认函</a>后查看</p>
+				                    	<#else>
+				                    		<#list f2.fundProduct as pro>
+			                            		<#if pro_index == 0>
+				                            		<div class="item-t item-t04">
+						                                <div class="t1">
+						                                    <a class="a-genre" href="${basePath}/product/detailProduct?productId=${pro.id}"><p>${pro.productName}</p></a>
+						                                   		<#if pro.viewState==1>
+									                        		<span class="fr">预热中</span>
+										                        <#elseif pro.viewState==2>
+										                        	<span class="fr">募集中</span>
+										                        <#elseif pro.viewState==3>
+										                        	<span class="fr">募集结束</span>
+										                        <#elseif pro.viewState==4>
+										                        	<span class="fr">投资期</span>
+										                        <#else>
+										                        	<span class="fr">募集失败</span>
+										                        </#if>
+						                                </div>
+						                                <div class="t2 t6">
+						                                    <p>
+						                                        <span class="span01">项目方向：${pro.direction}</span><span class="span02">资金规模：${pro.collectTopAmountStr}</span>
+						                                        <span class="span01">存续期：${pro.duration}</span><span class="span02">起投规模：${pro.startingLowAmountStr}</span>
+						                                    </p>
+						                                </div>
+						                                <div class="t3"><p>产品特点：${pro.details}</p></div>
+						                            </div>
+			                            		</#if>
+					                    	</#list>
+				                    	</#if>
+ 				                    	<!--如果只有财富产品产品 -->
+				                    	<#elseif (f2.p2pProduct?size >0) && (f2.fundProduct?size==0)>
+					                    	<#list f2.p2pProduct as p2p>
+				                            	<div class="item-t">
+						                               <div class="t1">
+						                                   <p><a href="${basePath}/product/p2p/detail?productId=${p2p.id}">${p2p.aliasName}</a></p>
+						                                    <#if p2p.remaindAmount!=0>
+					                                    	<span class="fr">预约中</span>
+						                                    <#else>
+						                                    	<span class="fr">已满标</span>
+						                                    </#if>
+						                               </div>
+						                               <p class="t3 t5">年均出借回报率约</p>
+						                               <div class="t4">
+						                                   <p>
+					                                   		<span class="span01">${p2p.interestRate}%</span>
+					                                        <#if p2p.interestRate2 != ''>
+					                                        	<span class="span02">${p2p.interestRate2}%</span>
+					                                        </#if>
+							                               	  <span class="span03">${p2p.commonMaxInvestScope}</span><span class="span04">${p2p.individualMaxInvest}</span>
+						                                   </p>
+						                               </div>
+						                               <div class="t3 t5"><span class="span01">有效期限：${p2p.duration}个月 </span><span class="span02">咨询进度：${p2p.progress}%</span></div>
+						                               <div class="t3">回收方式（汇中网）：${p2p.description}</div>
+						                         </div>	
+					                    	</#list>
+				                    	<#else>
+				                    		<#if isCon=='N'>
+				                    			<div class="i-agreement">
+					                                <p class="i-agreement-p i-top">此产品需签署<a href="javascript:openConfirmation('s-affirm');">世泽资本－合格投资者确认函</a>后查看</p>
+					                            </div>
+					                            <a class="btn btn-blue btn-a" href="javascript:openConfirmation('s-affirm');">签署确认函</a>
+					                        <#else>
+						                        <#list f2.fundProduct as pro>
+					                            	<div class="item-t item-t04">
+							                              <div class="t1">
+							                                  <a class="a-genre" href="${basePath}/product/detailProduct?productId=${pro.id}"><p>${pro.productName}</p></a>
+							                                  <#if pro.viewState==1>
+									                        	<span class="fr">预热中</span>
+										                        <#elseif pro.viewState==2>
+										                        	<span class="fr">募集中</span>
+										                        <#elseif pro.viewState==3>
+										                        	<span class="fr">募集结束</span>
+										                        <#elseif pro.viewState==4>
+										                        	<span class="fr">投资期</span>
+										                        <#else>
+										                        	<span class="fr">募集失败</span>
+										                        </#if>
+							                              </div>
+							                              <div class="t2 t6">
+							                                  <p>
+							                                      <span class="span01">项目方向：${pro.direction}</span><span class="span02">资金规模：${pro.collectTopAmountStr}</span>
+							                                      <span class="span01">存续期：${pro.duration}</span><span class="span02">起投规模：${pro.startingLowAmountStr}</span>
+							                                  </p>
+							                              </div>
+							                              <div class="t3"><p>产品特点：${pro.details}</p></div>
+							                         </div>
+						                    	</#list>
+				                    		</#if>
+		                           	    </#if>
+		                        </div>
+		                    </div>
+		                </li>
+					</#if>
+            	</#list>
+				<#list proShop as f3>
+					<#if f3_index == 2>
+						<li class="item3">
+		                    <div class="item-s">
+		                        <div class="top-layer01"><img src="${basePath}/resources/project/images/index/shop-head01.png"/></div>
+		                        <div class="top-layer">
+		                            <div class="state"></div>
+		                            <div class="title clearfix">
+		                                <span class="fl">咨询了${f3.paymentsNumber}<br/>款产品</span>
+		                                <div class="shop-head">
+		                                    <img src="${readPath}${f3.shopPo.shopHead}"/>
+		                                </div>
+		                                <span class="fr">${f3.concernCount}人<br>已关注</span>
+		                            </div>
+		                            
+		                            <#if f3.p2pRelation && f3.fundRelation>
+			                            <div class="p2p-layer">
+			                                <div class="p2p fl">财富产品</div><div class="p2p genre fr">世泽产品</div>
+			                            </div>
+			                        <#elseif f3.p2pRelation && !f3.fundRelation>
+										<div class="p2p">财富产品</div>
+			                        <#else>
+			                        	<div class="p2p genre">世泽产品</div>   
+		                            </#if>
+		                            
+		                            <div class="name">
+		                                <h4>${f3.shopPo.shopName}</h4>
+		                                <p>${f3.userDes}</p>
+		                            </div>
+		                            <a class="btn button02" href="javascript:openShop(${f3.shopPo.id});">进入店铺</a>
+		                        </div>
+		                        <div class="content-layer">
+			                    	<!--如果两种产品都存在 -->
+		                            <#if (f3.p2pProduct?size >0) && (f3.fundProduct?size>0)>
+		                            	<#list f3.p2pProduct as p2p>
+		                            		<#if p2p_index == 0>
+			                            		<div class="item-t01">
+					                                <div class="t1">
+ 					                                    <!--<p><a href="${basePath}/product/p2p/detail?productId=${p2p.id}">${p2p.aliasName}</a></p> -->
+					                                    <#if p2p.remaindAmount!=0>
+					                                    	<span class="fr">预约中</span>
+					                                    <#else>
+					                                    	<span class="fr">已满标</span>
+					                                    </#if>
+					                                </div>
+					                                <#if p2p.fanceId == '24126474915151950' >
+					                                	<p class="t3 t5">年均出借回报率约</p>
+						                                <div class="t4">
+						                                    <p>
+						                                        <span class="span01">${p2p.interestRate}%</span>
+							                                	<span class="span03">${p2p.commonMaxInvestScope}</span><span class="span04">${p2p.individualMaxInvest}</span>
+						                                    </p>
+						                                </div>
+					                                <#else>
+					                                	<p class="t3 t5">年均出借回报率约</p>
+						                                <div class="t4">
+						                                    <p>
+						                                    	<span class="span01">${p2p.interestRate}%</span>
+						                                        <#if p2p.interestRate2 != ''>
+						                                        	<span class="span02">${p2p.interestRate2}%</span>
+						                                        </#if>
+							                                	<span class="span03">${p2p.commonMaxInvestScope}</span><span class="span04">${p2p.individualMaxInvest}</span>
+						                                    </p>
+						                                </div>
+					                                </#if>
+					                                <div class="t3 t5"><span class="span01">有效期限：${p2p.duration}个月 </span><span class="span02">咨询进度：${p2p.progress}%</span></div>
+					                                <div class="t3">回收方式（汇中网）：${p2p.description}</div>
+					                            </div>
+		                            		</#if>
+				                    	</#list>
+				                    	<#if isCon=='N'>
+				                    		<p class="i-agreement-p">此产品需签署<a href="javascript:openConfirmation('s-affirm');">世泽资本－合格投资者确认函</a>后查看</p>
+				                    	<#else>
+				                    		<#list f3.fundProduct as pro>
+			                            		<#if pro_index == 0>
+				                            		<div class="item-t01 item-t02">
+						                                <div class="t1">
+ 						                                    <!--<a class="a-genre" href="javascript:;"><p>${pro.productName}</p></a> -->
+ 						                                    <!--&nbsp;<span class="fr">募集中</span> -->
+						                                    	<#if pro.viewState==1>
+									                        		&nbsp;<span class="fr">预热中</span>
+										                        <#elseif pro.viewState==2>
+										                        	&nbsp;<span class="fr">募集中</span>
+										                        <#elseif pro.viewState==3>
+										                        	&nbsp;<span class="fr">募集结束</span>
+										                        <#elseif pro.viewState==4>
+										                        	&nbsp;<span class="fr">投资期</span>
+										                        <#else>
+										                        	&nbsp;<span class="fr">募集失败</span>
+										                        </#if>
+						                                </div>
+						                                <div class="t2 t6">
+						                                    <p>
+						                                        <span class="span01">项目方向：${pro.direction}</span><span class="span02">资金规模：${pro.collectTopAmountStr}</span>
+						                                        <span class="span01">存续期：${pro.duration}</span><span class="span02">起投规模：${pro.startingLowAmountStr}</span>
+						                                    </p>
+						                                </div>
+						                                <div class="t3"><p>产品特点：${pro.details}</p></div>
+						                            </div>
+			                            		</#if>
+					                    	</#list>
+				                    	</#if>
+ 				                    	<!--如果只有p2p产品 -->
+				                    	<#elseif (f3.p2pProduct?size >0) && (f3.fundProduct?size==0)>
+					                    	<#list f3.p2pProduct as p2p>
+				                            	<div class="item-t01">
+						                               <div class="t1">
+ 						                                   <!--<p><a href="${basePath}/product/p2p/detail?productId=${p2p.id}">${p2p.aliasName}</a></p> -->
+						                                   <#if p2p.remaindAmount!=0>
+					                                    	<span class="fr">预约中</span>
+						                                    <#else>
+						                                    	<span class="fr">已满标</span>
+						                                    </#if>
+						                               </div>
+						                               <p class="t3 t5">年均出借回报率约</p>
+						                               <div class="t4">
+						                                   <p>
+						                                   		<span class="span01">${p2p.interestRate}%</span>
+						                                        <#if p2p.interestRate2 != ''>
+						                                        	<span class="span02">${p2p.interestRate2}%</span>
+						                                        </#if>
+							                               	  <span class="span03">${p2p.commonMaxInvestScope}</span><span class="span04">${p2p.individualMaxInvest}</span>
+						                                   </p>
+						                               </div>
+						                               <div class="t3 t5"><span class="span01">有效期限：${p2p.duration}个月 </span><span class="span02">咨询进度：${p2p.progress}%</span></div>
+						                               <div class="t3">回收方式（汇中网）：${p2p.description}</div>
+						                         </div>	
+					                    	</#list>
+				                    	<#else>
+				                    		<#if isCon=='N'>
+				                    			<div class="i-agreement">
+					                                <p class="i-agreement-p i-top">此产品需签署<a href="javascript:openConfirmation('s-affirm');">世泽资本－合格投资者确认函</a>后查看</p>
+					                            </div>
+					                            <a class="btn btn-blue btn-a" href="javascript:openConfirmation('s-affirm');">签署确认函</a>
+					                        <#else>
+						                        <#list f3.fundProduct as pro>
+					                            	<div class="item-t01 item-t02">
+							                              <div class="t1">
+ 							                                  <!--<a class="a-genre" href="${basePath}/product/detailProduct?productId=${pro.id}"><p>${pro.productName}</p></a> -->
+										                        <#if pro.viewState==1>
+									                        		<span class="fr">预热中</span>
+										                        <#elseif pro.viewState==2>
+										                        	<span class="fr">募集中</span>
+										                        <#elseif pro.viewState==3>
+										                        	<span class="fr">募集结束</span>
+										                        <#elseif pro.viewState==4>
+										                        	<span class="fr">投资期</span>
+										                        <#else>
+										                        	<span class="fr">募集失败</span>
+										                        </#if>
+							                              </div>
+							                              <div class="t2 t6">
+							                                  <p>
+							                                      <span class="span01">项目方向：${pro.direction}</span><span class="span02">资金规模：${pro.collectTopAmountStr}</span>
+							                                      <span class="span01">存续期：${pro.duration}</span><span class="span02">起投规模：${pro.startingLowAmountStr}</span>
+							                                  </p>
+							                              </div>
+							                              <div class="t3"><p>产品特点：${pro.details}</p></div>
+							                         </div>
+						                    	</#list>
+				                    		</#if>
+		                           	    </#if>
+			                    	
+		                        </div>
+		                    </div>
+		                </li>
+					</#if>
+				</#list>
+            </ul>
+             <!--<div class="p-outside p-first"><a href="javascript:;">精品五花肉1号精品五花肉号号</a></div> -->
+             <!--<div class="p-outside p-second"><a href="javascript:;">精品五花肉1号精品五花肉号号</a></div> -->
+            <#list proShop as f1>
+            	<#if f1_index ==2>
+            		<#if (f1.p2pProduct?size >0) && (f1.fundProduct?size>0)>
+	            		<#list f1.p2pProduct as p2p>
+		            		<#if p2p_index == 0>
+		            			<div class="p-outside p-first"><a href="${basePath}/product/p2p/detail?productId=${p2p.id}">${p2p.aliasName}</a></div>
+		            		</#if>
+		            	</#list>
+		            	<#if isCon=='Y'>
+			            	<#list f1.fundProduct as fund>
+			            		<#if fund_index == 0>
+			            			<div class="p-outside p-fourth"><a class="a-genre" href="${basePath}/product/detailProduct?productId=${fund.id}">${fund.productName}</a></div>
+			            		</#if>
+			            	</#list>
+		            	</#if>
+		            	
+		            <#elseif (f1.p2pProduct?size >0) && (f1.fundProduct?size==0)>
+		            	<#list f1.p2pProduct as p2p>
+		            		<#if p2p_index == 0>
+		            			<div class="p-outside p-first"><a href="${basePath}/product/p2p/detail?productId=${p2p.id}">${p2p.aliasName}</a></div>
+		            		</#if>
+		            		
+		            		<#if p2p_index == 1>
+		            			<div class="p-outside p-second"><a href="${basePath}/product/p2p/detail?productId=${p2p2.id}">${p2p.aliasName}</a></div>
+		            		</#if>
+		            	</#list>
+		            <#else>
+		            	<#if isCon=='Y'>
+		            		<#list f1.fundProduct as fund>
+			            		<#if fund_index == 0>
+			            			<div class="p-outside p-three"><a class="a-genre" href="${basePath}/product/detailProduct?productId=${fund.id}">${fund.productName}</a></div>
+			            		</#if>
+			            		<#if fund_index == 1>
+			            			<div class="p-outside p-fourth"><a class="a-genre" href="${basePath}/product/detailProduct?productId=${fund.id}">${fund.productName}</a></div>
+			            		</#if>
+			            	</#list>
+		            	</#if>
+	            	</#if>
+            	</#if>
+           	</#list>
+        </section>
+        <!-- End Shop -->
+
+        <!-- Product -->
+        <section class="product channel-list">
+            <div class="container index-list clearfix">
+                <h2>服务推荐</h2>
+
+				<div class="label-tab"> 
+					<ul class="label-nav clearfix">
+						<#list deputyChannels?keys as channelKey>
+							<li class="f1 label-li"><a href="javascript:;" <#if deputyChannels[channelKey].deputyChannel.id == 1> class="onactive" </#if>>${deputyChannels[channelKey].deputyChannel.channelName}</a></li>
+						</#list>
+						<p class="look-more"><a target="_blank" href="${basePath}/product/list.htm">查看更多</a></p>
+					</ul>
+					<div class="label-content">
+						<!-- Start频道 文娱 -->
+                        <div class="label-panel ent-ment civic">
+
+                            <ul class="second-level clearfix">
+								<#list deputyChannels["2"].deputyCategorys as deputyCategory>
+									<li class="fl"><a href="javascript:;" <#if deputyCategory_index==0> class="active" </#if> >${deputyCategory.name}</a></li>
+								</#list>
+                            </ul>
+                            <div class="live-serve active">
+                                <ul class="p-list current" id="fundCivic">
+
+									<#if listWenYu?? && listWenYu?size gt 0>
+										<#list listWenYu as product>
+                                    <li class="item civic p2p-bottom">
+                                        <div>
+                                            <span class="p-tag">${product.siteName}</span>
+                                            <section class="civic-img">
+                                                <a href="product/detail/${product.id}" rel="external" target="_blank"><img src="${readPath}${product.imgUrl}" alt=""></a>
+                                            </section>
+                                            <section>
+                                                <h1><a href="product/detail/${product.id}" rel="external" target="_blank">${product.productName}</a>
+                                                    <mark>策划筹备期</mark>
+                                                </h1>
+                                                <p><#if product.attributeList["movie_producers_name"]??>${product.attributeList["movie_producers_name"].attributeName}：${product.attributeList["movie_producers_name"].attributeValueList[0].attributeValue}</#if></p>
+                                                <p><#if product.attributeList["transf_attorn_copies"]??>${product.attributeList["transf_attorn_copies"].attributeName}：${product.attributeList["transf_attorn_copies"].attributeValueList[0].attributeValue}份</#if> </p>
+                                            </section>
+                                            <section>
+
+                                                <p> <#if product.attributeList["transf_share"]??>${product.attributeList["transf_share"].attributeName}：${product.attributeList["transf_share"].attributeValueList[0].attributeValue}</#if></p>
+                                                <p><#if product.attributeList["raise_limit_month"]??>${product.attributeList["raise_limit_month"].attributeName}：${product.attributeList["raise_limit_month"].attributeValueList[0].attributeValue}个月</#if></p>
+                                            </section>
+                                            <section>
+                                                <p> <#if product.attributeList["raise_total_amount"]??>${product.attributeList["raise_total_amount"].attributeName}：${product.attributeList["raise_total_amount"].attributeValueList[0].attributeValue?eval?string(',###.00')}元</#if></p>
+                                            </section>
+											<#if product.attributeList["raise_start_time"].attributeValueList[0].attributeValue?date gt .now?date>
+												<input type="hidden" id="wyProductId" value="${product.id!''}" />
+												<input type="hidden" id="wySellNum" value="${product.buyCount!''}" />
+												<input type="hidden" id="startTime" value="${product.attributeList["raise_start_time"].attributeValueList[0].attributeValue?datetime}" />
+												<section class="j_time count-down" id="snappedUp">
+                                                <aside>距离开抢还剩：</aside>
+                                                <time>
+                                                    <em class="j_hour" id="h-0">0</em>
+                                                    <em class="j_hour" id="h-1">0</em>
+                                                    <i>:</i>
+                                                    <em class="j_minite" id="m-0">0</em>
+                                                    <em class="j_minite" id="m-1">0</em>
+                                                    <i>:</i>
+                                                    <em class="j_second" id="s-0">0</em>
+                                                    <em class="j_second" id="s-1">0</em>
+                                                </time>
+                                                <u></u>
+                                            </section>
+												<#elseif (product.attributeList["raise_start_time"].attributeValueList[0].attributeValue?date lt .now?date) && (product.attributeList["raise_end_time"].attributeValueList[0].attributeValue?date gt .now?date) && (product.attributeList["transf_attorn_copies"].attributeValueList[0].attributeValue?eval gt product.buyCount?eval)>
+                                            <section>
+                                                <a class="btn btn-blue" href="product/detail/${product.id}" rel="external">立即咨询</a>
+                                                <aside>已咨询份数：${product.buyCount}份</aside>
+                                            </section>
+												<#else>
+												<section class="btn btn-gray">已售罄
+												</section>
+											</#if>
+                                        </div>
+                                    </li>
+                                    </#list>
+                                </ul>
+								<#else>
+									<div class="expect-light">
+										<span></span>
+										<p>敬请期待</p>
+									</div>
+									</#if>
+                            </div>
+							<!--<div class="expect-light civic">
+								<span></span>
+								<p>敬请期待</p>
+							</div>-->
+						</div>
+						<!-- End频道 文娱 -->
+
+                        <!--Start频道 生活服务-->
+						<div class="label-panel">
+                            <ul class="second-level clearfix">
+								<#list deputyChannels["3"].deputyCategorys as deputyCategory>
+									<li class="fl"><a href="javascript:;" <#if deputyCategory_index==0> class="active" </#if> >${deputyCategory.name}</a></li>
+								</#list>
+                            </ul>
+							<!-- 出境旅游 -->
+                            <div class="live-switch active">
+								<ul class="p-list current" id="fundCivic01">
+									<#if listLvyou?? && listLvyou?size gt 0>
+									<#list listLvyou as product>
+									<li class="item tourism p2p-bottom">
+										<div>
+											<span class="p-tag">${product.siteName}</span>
+											<section>
+												<a href="product/detail/${product.id}" rel="external" target="_blank"><img src="${readPath}${product.imgUrl}" alt=""></a>
+											</section>
+											<section>
+												<h1><a href="product/detail/${product.id}" title="${product.productName}" rel="external" target="_blank">${product.productName}</a></h1>
+												<p><#if product.attributeList["whither"]??>${product.attributeList["whither"].attributeName}：${product.attributeList["whither"].attributeValueList[0].attributeValue}</#if></p>
+												<p class="red"><span>¥</span>${product.productPrice}<span>起</span></p>
+											</section>
+											<section>
+												<p><#if product.attributeList["depart_time"]??> ${product.attributeList["depart_time"].attributeName}：${product.attributeList["depart_time"].attributeValueList[0].attributeValue}</#if></p>
+											</section>
+											<section>
+												<p><#if product.attributeList["cycle"]??> ${product.attributeList["cycle"].attributeName}：${product.attributeList["cycle"].attributeValueList[0].attributeValue}</#if></p>
+											</section>
+											<section>
+												<a class="btn btn-blue" href="product/detail/${product.id}" rel="external">查看详情</a>
+											</section>
+										</div>
+									</li>
+									</#list>
+
+								</ul>
+								<#else>
+									<div class="expect-light">
+										<span></span>
+										<p>敬请期待</p>
+									</div>
+									</#if>
+							</div>
+							<!-- 海外房产 -->
+                            <div class="live-switch">
+								<ul class="p-list current" id="fundCivic02">
+									<#if  listFangcan?? && listFangcan?size gt 0 >
+									<#list listFangcan as product>
+									<li class="item tourism p2p-bottom">
+										<div>
+											<span class="p-tag">${product.siteName}</span>
+											<section>
+												<a href="product/detail/${product.id}" rel="external" target="_blank"><img src="${readPath}${product.imgUrl}" alt=""></a>
+											</section>
+											<section class="first">
+												<h1><a href="product/detail/${product.id}" title="${product.productName}" rel="external" target="_blank">${product.productName}</a></h1>
+												<p><#if product.attributeList["house_seat"]??>${product.attributeList["house_seat"].attributeName}：${product.attributeList["house_seat"].attributeValueList[0].attributeValue}</#if></p>
+												<p class="red"><span>¥</span>${product.productPrice}<span></span></p>
+											</section>
+											<section class="second">
+												<p><#if product.attributeList["house_type"]>${product.attributeList["house_type"].attributeName}：${product.attributeList["house_type"].attributeValueList[0].attributeValue}</#if></p>
+											</section>
+											<section>
+												<p><#if product.attributeList["house_area"]??>${product.attributeList["house_area"].attributeName}：${product.attributeList["house_area"].attributeValueList[0].attributeValue}</#if></p>
+											</section>
+											<section>
+												<a class="btn btn-blue" href="product/detail/${product.id}" rel="external">查看详情</a>
+											</section>
+										</div>
+									</li>
+									</#list>
+								</ul>
+								<#else>
+									<div class="expect-light">
+										<span></span>
+										<p>敬请期待</p>
+									</div>
+									</#if>
+                            </div>
+							<!-- 海外疫苗 -->
+                            <div class="live-switch">
+                            	<ul class="p-list current">
+                            		<li class="item vaccine p2p-bottom">
+                            			<div>
+                            				<span class="p-tag">汇e康</span>
+                            				<section>
+                            					<a href="${basePath}/product/hkHpv.htm" rel="external" target="_blank"><img src="${basePath}/resources/project/images/public/serve01.png" alt=""></a>
+                            				</section>
+                            				<section class="first">
+                            					<h1><a href="${basePath}/product/hkHpv.htm" title="香港HPV疫苗" rel="external" target="_blank">香港HPV疫苗</a><span>适用人群：9岁以上男女均可</span></h1>
+                            					<p class="top">套餐详情：一般情况、内科检查、外科检查（男）、眼科常规检查、免费早餐免费早餐免免费早餐免免费早餐免</p>
+                            					<p class="red"><span>¥</span>3990</p>
+                            				</section>
+                            				<a class="btn btn-blue" href="${basePath}/product/hkHpv.htm" rel="external">查看详情</a>
+                            			</div>
+                            		</li>
+                            	</ul>
+								<!-- <div class="expect-light">
+									<span></span>
+									<p>敬请期待</p>
+								</div> -->
+                            </div>
+							<!-- 国内体检 -->	
+                            <div class="live-switch">
+                            	<ul class="p-list current">
+                            		<!--<li class="item vaccine p2p-bottom">
+                            			<div>
+                            				<span class="p-tag">慈铭体检</span>
+                            				<section>
+                            					<a href="${basePath}/product/maleBasic.htm" rel="external" target="_blank"><img src="${basePath}/resources/project/images/public/live-physical01.png" alt=""></a>
+                            				</section>
+                            				<section class="first">
+                            					<h1><a href="${basePath}/product/maleBasic.htm" title="单人男士基础体检套餐" rel="external" target="_blank">单人男士基础体检套餐</a><span>适用人群：男士</span></h1>
+                            					<p class="top">套餐详情：一般情况、内科检查、外科检查（男）、眼科常规检查、免费早餐免费早餐免免费早餐免免费早餐免</p>
+                            					<p class="red"><span>¥</span>494</p>
+                            				</section>
+                            				<a class="btn btn-blue" href="${basePath}/product/maleBasic.htm" rel="external">查看详情</a>
+                            			</div>
+                            		</li>
+                            		<li class="item vaccine p2p-bottom">
+                            			<div>
+                            				<span class="p-tag">慈铭体检</span>
+                            				<section>
+                            					<a href="${basePath}/product/maleUpgrade.htm" rel="external" target="_blank"><img src="${basePath}/resources/project/images/public/live-physical02.png" alt=""></a>
+                            				</section>
+                            				<section class="first">
+                            					<h1><a href="${basePath}/product/maleUpgrade.htm" title="单人男士升级体检套餐" rel="external" target="_blank">单人男士升级体检套餐</a><span>适用人群：男士</span></h1>
+                            					<p class="top">套餐详情：一般情况、内科检查、外科检查（男）、眼科常规检查、免费早餐免费早餐免免费早餐免免费早餐免</p>
+                            					<p class="red"><span>¥</span>884</p>
+                            				</section>
+                            				<a class="btn btn-blue" href="${basePath}/product/maleUpgrade.htm" rel="external">查看详情</a>
+                            			</div>
+                            		</li>
+                            		<li class="item vaccine p2p-bottom">
+                            			<div>
+                            				<span class="p-tag">慈铭体检</span>
+                            				<section>
+                            					<a href="${basePath}/product/femaleBasic.htm" rel="external" target="_blank"><img src="${basePath}/resources/project/images/public/live-physical03.png" alt=""></a>
+                            				</section>
+                            				<section class="first">
+                            					<h1><a href="${basePath}/product/femaleBasic.htm" title="单人女士基础体检套餐" rel="external" target="_blank">单人女士基础体检套餐</a><span>适用人群：女士</span></h1>
+                            					<p class="top">套餐详情：一般情况、内科检查、外科检查（女）、眼科常规检查、耳鼻喉科检查、妇科常规检查、口腔科检查、腹部彩超</p>
+                            					<p class="red"><span>¥</span>512</p>
+                            				</section>
+                            				<a class="btn btn-blue" href="${basePath}/product/femaleBasic.htm" rel="external">查看详情</a>
+                            			</div>
+                            		</li>
+                            		<li class="item vaccine p2p-bottom">
+                            			<div>
+                            				<span class="p-tag">慈铭体检</span>
+                            				<section>
+                            					<a href="${basePath}/product/femaleUpgrade.htm" rel="external" target="_blank"><img src="${basePath}/resources/project/images/public/live-physical04.png" alt=""></a>
+                            				</section>
+                            				<section class="first">
+                            					<h1><a href="${basePath}/product/femaleUpgrade.htm" title="单人女士升级体检套餐" rel="external" target="_blank">单人女士升级体检套餐</a><span>适用人群：女士</span></h1>
+                            					<p class="top">套餐详情：套餐详情：一般情况、内科检查、外科检查（女）、眼科常规检查、耳鼻喉科检查、妇科常规检查、口腔科检查、腹部彩超</p>
+                            					<p class="red"><span>¥</span>884</p>
+                            				</section>
+                            				<a class="btn btn-blue" href="${basePath}/product/femaleUpgrade.htm" rel="external">查看详情</a>
+                            			</div>
+                            		</li>-->
+                            		<li class="item vaccine p2p-bottom">
+                            			<div>
+                            				<span class="p-tag">汇e康</span>
+                            				<section>
+                            					<a href="${basePath}/product/doubleExamine.htm" rel="external" target="_blank"><img src="${basePath}/resources/project/images/public/live-physical05.png" alt=""></a>
+                            				</section>
+                            				<section class="first">
+                            					<h1><a href="${basePath}/product/doubleExamine.htm" title="汇康美年健康双检套餐" rel="external" target="_blank">汇康美年健康双检套餐</a><span></span></h1>
+                            					<p class="top">套餐详情：汇e康&美年大健康--------强强联合 打造超强防癌计划 超早期癌症预防最佳组合</p>
+                            					<p class="red"><span>¥</span>3980</p>
+                            				</section>
+                            				<a class="btn btn-blue" href="${basePath}/product/doubleExamine.htm" rel="external">查看详情</a>
+                            			</div>
+                            		</li>
+                            	</ul>
+                            	
+								<!-- <div class="expect-light">
+									<span></span>
+									<p>敬请期待</p>
+								</div> -->
+                            </div>
+							<!-- 进口平行车 -->
+                            <div class="live-switch">
+								<div class="expect-light">
+									<span></span>
+									<p>敬请期待</p>
+								</div>
+                            </div>
+                            <!-- 跨境电商 -->
+							<div class="live-switch">
+								<div class="expect-light">
+									<span></span>
+									<p>敬请期待</p>
+								</div>
+							</div>
+						</div>
+                        <!--End频道 生活服务-->
+
+						<!--Start频道 金融-->
+                        <div class="label-panel finance active">
+
+                            <ul class="second-level clearfix">
+								<#list deputyChannels["1"].deputyCategorys as deputyCategory>
+									<li class="fl"><a href="javascript:;" <#if deputyCategory_index==0> class="active" </#if> >${deputyCategory.name}</a></li>
+								</#list>
+                            </ul>
+                            <div class="live-switch active">
+                                <ul class="p-list current" id="fundP2p">
+                                	
+                                    <#list proListP2P as p2p>
+										<#if p2p.fanceId == '24126474915151950' >
+											<li class="item p2p p2p-bottom green-hands">
+												<div class="li">
+													<span class="p-tag">汇中网</span>
+													<span class="p-hands"></span>
+													<#if p2p.remaindAmount != 0 && p2p.status =='4'>
+														<a class="btn btn-blue "  href="${basePath}/product/p2p/detail?productId=${p2p.id}">立即咨询</a>
+														<#else>
+															<a class="full" ></a>
+													</#if>
+													<h3><a href="${basePath}/product/p2p/detail?productId=${p2p.id}">${p2p.aliasName}<span></span></a></h3>
+													<p class="top01">
+														<span>年均出借回报率约：</span>
+														<span>${p2p.interestRate}<em>%</em></span>
+														<span>有效期限：${p2p.duration}个月</span>
+														<span>咨询进度：<em>${p2p.progress}%</em></span>
+													</p>
+													<p class="bottom01">
+														<span>回收方式（汇中网）：${p2p.description}</span>
+													</p>
+												</div>
+											</li>
+										<#else>
+										
+											<#if p2p.interestRate2 != '' >
+												<li class="item p2p p2p-bottom">
+													<div>
+														<span class="p-tag">汇中网</span>
+														<#if p2p.remaindAmount != 0 && p2p.status =='4' >
+															<a class="btn btn-blue "  href="${basePath}/product/p2p/detail?productId=${p2p.id}">立即咨询</a>
+															<#else>
+																<a class="full" ></a>
+														</#if>
+	
+														<h3><a href="${basePath}/product/p2p/detail?productId=${p2p.id}">${p2p.aliasName}</a></h3>
+														<p class="top01">
+															<span class="col-1">${p2p.interestRate}%</span>
+															<span class="col-2">年均出借回报率约<br><span>~</span></span>
+															<span class="col-3">${p2p.interestRate2}%</span>
+															<span class="col-4">有效期限：${p2p.duration}个月</span>
+															<span class="col-5">咨询进度：${p2p.progress}%</span>
+														</p>
+														<p class="bottom01">
+															<span class="col-6">(${p2p.commonMaxInvestScope})</span>
+															<span class="col-7">(${p2p.individualMaxInvest})</span>
+															<span class="col-8">回收方式（汇中网）：${p2p.description}</span>
+														</p>
+													</div>
+												</li>
+											<#else>
+												<li class="item p2p p2p-bottom p-single">
+													<div class="li">
+														<span class="p-tag">汇中网</span>
+														<#if p2p.remaindAmount != 0 && p2p.status =='4'>
+															<a class="btn btn-blue "  href="${basePath}/product/p2p/detail?productId=${p2p.id}">立即咨询</a>
+															<#else>
+																<a class="full" ></a>
+														</#if>
+														<h3><a href="${basePath}/product/p2p/detail?productId=${p2p.id}">${p2p.aliasName}</a></h3>
+														<p class="top01">
+															<span>年均出借回报率约：</span>
+															<span>${p2p.interestRate}<em>%</em></span>
+															<span>有效期限：${p2p.duration}个月</span>
+															<span>咨询进度：<em>${p2p.progress}%</em></span>
+														</p>
+														<p class="bottom01">
+															<span>回收方式（汇中网）：${p2p.description}</span>
+														</p>
+													</div>
+												</li>
+											</#if>
+											
+										</#if>
+                                    </#list>
+                                </ul>
+
+                            </div>
+
+                            <div class="live-switch">
+							<#if (proList??&& proList?size>0)>
+								<#if isCon=='Y'>
+									<ul class="p-list current">
+										<#list proList as pro>
+											<li class="item p2p-bottom">
+												<div>
+													<span class="p-tag"><span>世泽资本</span></span>
+													<#if pro.viewState==1>
+														<a class="preheat"></a>
+														<#elseif pro.viewState==2>
+															<a class="btn btn-red " href="${basePath}/product/detailProduct?productId=${pro.id}">募集中</a>
+															<#elseif pro.viewState==3>
+																<a class="end"></a>
+																<#elseif pro.viewState==4>
+																	<a class="investment"></a>
+																	<#else>
+																		<a class="fail"></a>
+													</#if>
+													<h3><a  href="${basePath}/product/detailProduct?productId=${pro.id}">${pro.productName}</a></h3>
+													<p class="top">
+														<span class="col1">项目方向：${pro.direction}</span>
+														<span class="col2">项目规模：${pro.collectTopAmountStr}</span>
+														<span class="col3">存续期：${pro.duration}</span>
+														<span class="col4">最少咨询：${pro.startingLowAmountStr}</span>
+													</p>
+													<hr>
+													<p class="bottom">产品特点：${pro.details}</p>
+												</div>
+											</li>
+										</#list>
+									</ul>
+									<#else>
+										<ul class="p-list current">
+											<li class="item p2p-bottom">
+												<div>
+													<span class="p-tag"><span>世泽产品</span></span>
+													<a class="btn btn-blue" href="javascript:openConfirmation('s-affirm');">签署确认函</a>
+													<img class="agreement" src="${basePath}/resources/project/images/public/agreement.png"/>
+													<span class="agreement-p">此产品需签署<a href="javascript:openConfirmation('s-affirm');">世泽资本－合格投资者确认函</a>后查看</span>
+												</div>
+											</li>
+										</ul>
+								</#if>
+							</#if>
+							</div>
+                            <div class="live-switch">
+								<ul class="p-lend-list" id="lend-list">
+									<li>
+										<div class="lend-line">
+											<span class="lend-label"></span>
+											<div>
+												<p><span>我要借款</span></p>
+												<p><span>借款热线：&nbsp;&nbsp;400-893-9819</span></p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+                        </div>
+						<!--End频道 金融-->
+
+						<!--Start频道 培训-->
+						<div class="label-panel train">
+							<div class="expect-light">
+							    <span></span>
+							    <p>敬请期待</p>
+							</div>
+						</div>
+						<!--End频道 培训-->
+
+						<!--Start频道 社交-->
+                        <div class="label-panel social-contact">
+                        	<div class="expect-light">
+                        	    <span></span>
+                        	    <p>敬请期待</p>
+                        	</div>
+                        </div>
+						<!--End频道 社交-->
+
+                    </div>
+				</div>
+            </div>
+        </section>
+        <!-- End Product -->
+    </div>
+    <!--End index-->
+ <!-- unbind -->
+	<#include "message/user-msg.htm">
+    <!-- Footer -->
+    <#include "common/footer.ftl">
+    <!-- End Footer -->
+    <section id="attenSuccess" class="s-success" >
+        <h4>关注成功</h4>
+    </section>
+    <section id="goLogin" class="s-success" >
+        <h4>请登录</h4>
+    </section>
+    <section id="s-affirm" class="s-affirm" >
+        <div class="a-content">
+            <div class="a-logo">|&nbsp;&nbsp;&nbsp;<img src="${basePath}/resources/project/images/public/s-logo.png" alt=""></div>
+            <a class="close" href="javascript:;"></a>
+            <div class="a-bg">
+                 本基金投资者（下称“本投资者”）确认如下事项：<br><br>
+
+                 一、  本投资者具有相应合法的投资主体资格，不存在任何法律、行政法规、中国证券监督管理委员会等规
+                 范性文件及交易规则禁止或限制的情形。<br>
+                 二、  本投资者提供的所有证件、资料均真实、全面、有效、合法，并且保证资金来源合法。<br>
+                 三、  本投资者已充分了解下述《私募投资基金监督管理暂行办法》关于世泽资本合格投资者的规定，并承
+                 诺本投资者是符合该规定的世泽资本合格投资者。<br><br>
+
+                 《私募投资基金监督管理暂行办法》关于合格投资者的规定如下:<br>
+                 第十二条世泽资本的合格投资者是指具备相应风险识别能力和风险承担能力，投资于单只世泽资本的金额不
+                 低于100 万元且符合下列相关标准的单位和个人：<br>
+                 （一）净资产不低于1000 万元的单位；<br>
+                 （二）金融资产不低于300 万元或者最近三年个人年均收入不低于50 万元的个人。<br><br>
+
+                 前款所称金融资产包括银行存款、股票、债券、基金份额、资产管理<br>
+                 计划、银行理财产品、信托计划、保险产品、期货权益等。<br><br>
+
+                 第十三条下列投资者视为合格投资者：<br>
+                 （一）社会保障基金、企业年金等养老基金，慈善基金等社会公益基金；<br>
+                 （二）依法设立并在基金业协会备案的投资计划；<br>
+                 （三）投资于所管理世泽资本的世泽资本管理人及其从业人员；<br>
+                 （四）中国证监会规定的其他投资者。
+            </div>
+            <em class="error"><i class="i-radio"></i>本人／本机构确认符合合格投资人条件</em>
+            <em class="error-p" style="display: none">请确认并勾选符合合格投资人条件</em>
+            <a onclick="submitConfirmation();" class="btn btn-red sa-btn">确定</a>
+        </div>
+    </section>
+	
+	<!-- start h-attention -->
+	<section id="hint-attention" class="popup h-attention">
+		<a href="javascript:;" class="h-close"></a>
+		<div>每个用户只能关注一个面包客且不能取消关注，确定要关注该面包客吗？</div>
+		<p><a href="javascript:attenUser();" class="active">关注</a><a href="javascript:;" class="sub-agent">再想想</a></p>
+	</section>
+	<!-- end h-attention -->
+	<input type="hidden" id="attrDeputyUserId" />
+    <script src="${basePath}/resources/project/js/index.js"></script>
+    <script type="text/javascript" src="${basePath}/resources/dev/index.js"></script>
+	<script type="text/javascript" src="${basePath}/resources/project/js/youyuTimer.js"></script>
+<script type="text/javascript">
+
+	youyuTimer();
+/*if($(".label-nav li").length<=2)){
+	$(this).addClass("on");
+}*/
+
+function openConfirmation(selector){
+	if(""==userId){
+		window.location.href = BASE_PATH+"/user/login";
+		return false;
+	}
+	$('.popup').hide();
+    if($('.mask').length==0||$('.reg1-content').length>0){
+        $('<div class="mask"></div>').appendTo($('body')).fadeIn();
+    }
+    $('#'+selector+'').fadeIn();
+}
+function openShop(shopId){
+	var url = "${basePath}/shop/product/getShopInfo?shopId="+shopId;
+	window.location.href = url;
+}
+	function showNotice(selector){
+		if($('.mask').length==0){
+			$('<div class="mask"></div>').appendTo($('body')).fadeIn();
+		}else{
+			$('.mask').addClass('heigher').fadeIn();
+		}
+		$('#'+selector+'').show();
+	}
+function attenAgentUser(deputyUserId){
+	if(""==userId){
+// 		open("goLogin");
+window.location.href = BASE_PATH+"/user/login";
+		return false;
+	}
+	$("#attrDeputyUserId").val(deputyUserId);
+
+	showNotice('hint-attention');
+
+
+}
+
+function attenUser(){
+	$.ajax({
+		type: 'POST',
+        url: BASE_PATH+'/deputyUser/attenDeputyUser.htm',
+		dataType: 'JSON',
+		data:{
+			"shopId":$("#attrDeputyUserId").val()
+		},
+		success: function(data) {
+			if(data.header.errorCode == '200'){
+				open("attenSuccess");
+			}else{
+				alert("关注失败！");
+			}
+		}
+	});
+}
+
+function open(selector){
+    $('.popup').hide();
+    if($('.mask').length==0||$('.reg1-content').length>0){
+        $('<div class="mask"></div>').appendTo($('body')).fadeIn();
+    }
+    $('#'+selector+'').fadeIn();
+
+    //判断当前id后，2秒消失
+    if(selector=='goLogin'){
+        setTimeout(function(){
+            $('#'+selector+'').fadeOut();
+            $('.mask').remove();
+        },2000);
+    }
+    if(selector=='attenSuccess'){
+        setTimeout(function(){
+            $('#'+selector+'').fadeOut();
+            $('.mask').remove();
+            location.reload();
+        },2000);
+    }
+}
+
+function submitConfirmation(){
+	if($(".i-radio").attr("class") !='i-radio checked'){
+		$('.error-p').show();
+		return false;
+	}
+	
+	$.ajax({
+		type: 'POST',
+        url: BASE_PATH+'/user/submitConfirmation.htm',
+        dataType: 'JSON',
+        success: function(data) {
+        	if(data.header.errorCode == '200'){
+        		location.reload();
+        	}else{
+        		alert('查询信息失败');
+        	}
+        }
+	});
+}
+	$(function(){
+		//类目内容切换
+		$(".label-content .second-level a").on('click',function(){
+			$(this).parents(".second-level").children().find("a").removeClass('active');
+			$(this).addClass('active')
+			var index = $(this).parents('.fl').index();
+			$(this).parents(".second-level").siblings().eq(index).addClass("active").siblings().removeClass("active");
+		})
+	})
+</script>
+</body>
+</html>
+

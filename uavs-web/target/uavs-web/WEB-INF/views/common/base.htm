@@ -1,0 +1,18 @@
+<#if !basePath??><#assign basePath=request.contextPath ></#if> 
+<#assign version=1.01 >
+<script type="text/javascript">
+var BASE_PATH="${basePath?default('/') }";
+//if(BASE_PATH == ''){ BASE_PATH = BASE_PATH + '/' ;}	
+function isLoginOfAjax(msg){
+	if(msg.header.errorCode == '9999'){	
+		alert(msg.header.errorMsg,function(){
+			window.location.href = msg.body.loginUrl;
+		});
+			
+	}
+}
+</script>
+<script src="${basePath}/resources/project/js/html5.js?${version}"></script>
+<script src="${basePath}/resources/project/js/jquery.js?${version}"></script>
+<script src="${basePath}/resources/project/js/quality.js?${version}"></script>
+<script src="${basePath}/resources/project/js/external.js"></script>

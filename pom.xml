@@ -1,0 +1,137 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.oasis</groupId>
+  <artifactId>uavs</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  
+  <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<spring.version>4.1.4.RELEASE</spring.version>
+		<jackson.version>2.5.0</jackson.version>
+		<zookeeper.version>3.3.6</zookeeper.version>
+		<dubbo.version>2.5.3</dubbo.version>
+		<hz.version>0.0.1-SNAPSHOT</hz.version>
+		
+		<!-- web项目 -->
+		<hz.HzCommonPay.version>0.0.1-SNAPSHOT</hz.HzCommonPay.version>
+		<hz.HzCommonUser.version>0.0.1-SNAPSHOT</hz.HzCommonUser.version>
+		<hz.HzDeputy-admin.version>0.0.1-SNAPSHOT</hz.HzDeputy-admin.version>
+		<hz.HzDeputy-wap.version>0.0.1-SNAPSHOT</hz.HzDeputy-wap.version>
+	 	<hz.HzDeputy-pay.version>0.0.1-SNAPSHOT</hz.HzDeputy-pay.version>
+		<hz.HzDeputy-web.version>0.0.1-SNAPSHOT</hz.HzDeputy-web.version>
+		<hz.HzFund-admin.version>0.0.1-SNAPSHOT</hz.HzFund-admin.version>
+		<hz.HzFund-wap.version>0.0.1-SNAPSHOT</hz.HzFund-wap.version>
+		<hz.HzFund-web.version>0.0.1-SNAPSHOT</hz.HzFund-web.version>
+
+	</properties>
+  <dependencies>
+		<!-- spring核心包 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<!-- spring基础包 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<!-- spring扩展包 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<!-- spring模型包 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<!-- log4j日志 -->
+		<!-- <dependency>
+		  <groupId>log4j</groupId>
+		  <artifactId>log4j-ngear</artifactId>
+		  <version>1.2.17</version>
+		</dependency> -->
+		<dependency>
+		    <groupId>com.alibaba</groupId>
+		    <artifactId>fastjson</artifactId>
+		    <version>1.2.8</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<defaultGoal>clean compile install</defaultGoal>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<!-- 资源根目录排除各环境的配置，使用单独的资源目录来指定 -->
+				<excludes>
+					<exclude>test/*</exclude>
+					<exclude>prod/*</exclude>
+				</excludes>
+			</resource>
+			<resource>
+				<directory>src/main/resources/dev</directory>
+			</resource>
+			<!-- java包中的xml文件进行编译 -->
+            <resource> 
+                <directory>src/main/java</directory> 
+                <includes> 
+                    <include>**/*.xml</include> 
+                </includes> 
+                <filtering>true</filtering> 
+            </resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.6</version>
+				<configuration>
+					<skip>true</skip>
+					<forkMode>once</forkMode>
+					<argLine>-Dfile.encoding=UTF-8</argLine>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.5.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<encoding>utf-8</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.4</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>jar-no-fork</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<!-- 设置resouce目录下的所有文件编码，否则如果配置xml文件中有中文字符，部署后可能会引起运行失败 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.6</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+  <modules>
+  	<module>uavs-web</module>
+  	<module>uavs-common</module>
+  </modules>
+</project>
